@@ -126,12 +126,12 @@ table.profile {
 td.main {
 	width: 60%;
 	vertical-align: right;
-	padding: lem;
+	padding: 1em;
 }
 
 td.sidebar {
 	width: 25%;
-	padding: lem;
+	padding: 1em;
 	vertical-align: center;
 	background: #fdf;
 }
@@ -186,4 +186,82 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+ul.users {
+	margin-top: 1em;
+	
+}
+
+.users li {
+	list-style: none;
+
+}
+a.add_friend_button {
+  
+  float: right;
+  
+  display: square;
+  text-align: center;
+  width: 70px;
+  color: #fff;
+  background: #FF9933;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 3px;
+}
+
+h1.micropost {
+	margin-bottom: 0.3em;
+}
+
+table.microposts {
+	margin-top: 1em;
+}
+
+table.microposts tr {
+	height: 70px;
+}
+
+table.microposts tr td.gravatar {
+	border-top: 1px solid #ccc;
+	vertical-align: top;
+	width: 50px;
+}
+
+table.microposts tr td.micropost {
+	border-top: 1px solid #ccc;
+	vertical-align: top;
+	padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+	display: block;
+	font-size: 85%;
+	color: #666;
+}
+
+div.user_info img {
+	padding-right: 0.1em;
+}
+
+div.user_info a {
+	text-decoration: none;
+}
+
+div.user_info span.user_name {
+	position: absolute;
+}
+
+div.user_info span.microposts {
+	font-size: 80%;
+}
+
+form.new_micropost {
+	margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+	height: 4em;
+	margin-bottom: 0;
 }

@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
   resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
+  resources :microposts, :only => [:create, :destroy]
   
   get "users/new"
 
@@ -9,6 +11,8 @@ SampleApp::Application.routes.draw do
   match "/",        :to => "pages#home"
   match "/home",    :to => 'pages#home'
   match "/signup",  :to => 'users#new'
+  match "/signin",  :to => 'sessions#new'
+  match "/signout", :to => 'sessions#destroy'
   
   root :to => 'pages#home'
     
